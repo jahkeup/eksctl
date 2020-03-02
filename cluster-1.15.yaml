@@ -1,0 +1,13 @@
+---
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: martina-1-15-9
+  region: us-west-2
+  version: "1.15"
+
+managedNodeGroups:
+  - name: managed-1
+    instanceType: m5.large
+    desiredCapacity: 1
